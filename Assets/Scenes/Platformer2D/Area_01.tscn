@@ -14,7 +14,7 @@ point_count = 2
 [sub_resource type="Curve2D" id="Curve2D_pygvr"]
 resource_local_to_scene = true
 _data = {
-"points": PackedVector2Array(-70.10442, 17.255508, 70.10442, -17.255508, 74.91315, 31.42382, 154.43517, -0.0072416067, -154.43517, 0.0072416067, -1.086853, -66.444176, -2.488037, -34.202877, 2.488037, 34.202877, -148.08682, -20.032547, 0, 0, 0, 0, -57.557617, 26.836327, 0, 0, 0, 0, 74.913, 31.424)
+"points": PackedVector2Array(-81.25344, 2.4283733, 81.25344, -2.4283733, -9.111145, 32.55732, -2.2298038, 31.002193, 2.2298038, -31.002193, 129.46844, -17.024601, 59.827774, -1.8943315, -59.827774, 1.8943315, -1.2244873, -68.51352, 0.060310006, -47.951675, -0.060310006, 47.951675, -148.08682, -20.032547, 0, 0, 0, 0, -9.111145, 32.55732)
 }
 point_count = 5
 
@@ -38,7 +38,7 @@ jump_power = 8.5
 position = Vector2(617, 62)
 curve = SubResource("Curve2D_qmsq0")
 path_time = 1.5
-transition = 3
+transition = 0
 
 [node name="MovingPlatformLarge" parent="MovingPlatformLarge" unique_id=1972147386 instance=ExtResource("3_qmsq0")]
 position = Vector2(-55.913147, -121.68594)
@@ -46,3 +46,4 @@ scale = Vector2(0.8875767, 1.0534513)
 curve = SubResource("Curve2D_pygvr")
 looping = true
 path_time = 10.0
+transition = 0
