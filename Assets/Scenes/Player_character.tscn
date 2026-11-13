@@ -9,6 +9,8 @@ height = 14.0
 
 [node name="PlayerCharacter" type="CharacterBody2D" unique_id=1309494651]
 script = ExtResource("1_4tm6d")
+speed = 5.0
+jump_power = 8.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1691969426]
 offset = Vector2(0, -15)
