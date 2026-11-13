@@ -2,6 +2,21 @@
 
 [ext_resource type="TileSet" uid="uid://c5v53u0attaww" path="res://Assets/Tilesets/platformer_tileset.tres" id="1_1eeqa"]
 [ext_resource type="PackedScene" uid="uid://7r6nvr5dse81" path="res://Assets/Scenes/Player_character.tscn" id="2_1eeqa"]
+[ext_resource type="PackedScene" uid="uid://c6oihxmnqmash" path="res://Assets/Scenes/moving_platform_large.tscn" id="3_qmsq0"]
+
+[sub_resource type="Curve2D" id="Curve2D_qmsq0"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -48)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_pygvr"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(-70.10442, 17.255508, 70.10442, -17.255508, 74.91315, 31.42382, 154.43517, -0.0072416067, -154.43517, 0.0072416067, -1.086853, -66.444176, -2.488037, -34.202877, 2.488037, 34.202877, -148.08682, -20.032547, 0, 0, 0, 0, -57.557617, 26.836327, 0, 0, 0, 0, 74.913, 31.424)
+}
+point_count = 5
 
 [node name="Platformer2d" type="Node2D" unique_id=1606863717]
 
@@ -18,3 +33,16 @@ tile_set = ExtResource("1_1eeqa")
 [node name="PlayerCharacter" parent="." unique_id=1309494651 instance=ExtResource("2_1eeqa")]
 speed = 4.0
 jump_power = 8.5
+
+[node name="MovingPlatformLarge" parent="." unique_id=356109472 instance=ExtResource("3_qmsq0")]
+position = Vector2(617, 62)
+curve = SubResource("Curve2D_qmsq0")
+path_time = 1.5
+transition = 3
+
+[node name="MovingPlatformLarge" parent="MovingPlatformLarge" unique_id=1972147386 instance=ExtResource("3_qmsq0")]
+position = Vector2(-55.913147, -121.68594)
+scale = Vector2(0.8875767, 1.0534513)
+curve = SubResource("Curve2D_pygvr")
+looping = true
+path_time = 10.0
