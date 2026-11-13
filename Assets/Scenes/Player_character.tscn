@@ -117,7 +117,6 @@ animation_player = NodePath("AnimationPlayer")
 sprite = NodePath("Sprite2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="PlayerAnimator" unique_id=669475519]
-z_index = 1
 position = Vector2(0, -8)
 texture = ExtResource("2_16tu1")
 region_enabled = true

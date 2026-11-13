@@ -15,6 +15,10 @@ run/main_scene="uid://dtl4ievslmpns"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*uid://dldm4d80h3btr"
+
 [display]
 
 window/stretch/mode="canvas_items"
@@ -48,6 +52,7 @@ jump={
 2d_physics/layer_1="player"
 2d_physics/layer_9="ground"
 2d_physics/layer_10="one_way_ground"
+2d_physics/layer_17="transition"
 
 [physics]
 

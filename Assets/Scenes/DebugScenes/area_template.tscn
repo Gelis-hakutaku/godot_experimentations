@@ -1,0 +1,23 @@
+[gd_scene format=4 uid="uid://cq1iva5pksl5y"]
+
+[ext_resource type="TileSet" uid="uid://c5v53u0attaww" path="res://Assets/Tilesets/platformer_tileset.tres" id="1_6qips"]
+[ext_resource type="PackedScene" uid="uid://356im2ttv5sj" path="res://Assets/Scenes/area_exit.tscn" id="2_suxuq"]
+[ext_resource type="PackedScene" uid="uid://7r6nvr5dse81" path="res://Assets/Scenes/Player_character.tscn" id="2_tprq0"]
+
+[node name="Platformer2d" type="Node2D" unique_id=1606863717]
+
+[node name="TileMapLayers" type="Node" parent="." unique_id=399844261]
+
+[node name="TileMapBackground" type="TileMapLayer" parent="TileMapLayers" unique_id=695376634]
+tile_set = ExtResource("1_6qips")
+
+[node name="TileMapGround" type="TileMapLayer" parent="TileMapLayers" unique_id=687590264]
+tile_map_data = PackedByteArray("AAACAAMAAAABAAUAAAACAAIAAAABAAUAAAACAAEAAAABAAUAAAACAAAAAAABAAQAAAABAAMAAAABAAUAAAABAAIAAAABAAUAAAABAAEAAAABAAUAAAABAAAAAAABAAQAAAAAAAMAAAABAAUAAAAAAAIAAAABAAUAAAAAAAEAAAABAAUAAAAAAAAAAAABAAQAAAD//wMAAAABAAUAAAD//wIAAAABAAUAAAD//wEAAAABAAUAAAD//wAAAAABAAQAAAD+/wMAAAABAAUAAAD+/wIAAAABAAUAAAD+/wEAAAABAAUAAAD+/wAAAAABAAQAAAD9/wMAAAABAAUAAAD9/wIAAAABAAUAAAD9/wEAAAABAAUAAAD9/wAAAAABAAQAAAA=")
+tile_set = ExtResource("1_6qips")
+
+[node name="AreaExit" parent="TileMapLayers" unique_id=1912587187 instance=ExtResource("2_suxuq")]
+position = Vector2(42, -15)
+
+[node name="PlayerCharacter" parent="." unique_id=1309494651 instance=ExtResource("2_tprq0")]
+speed = 4.0
+jump_power = 8.5
