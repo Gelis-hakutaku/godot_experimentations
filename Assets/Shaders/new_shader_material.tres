@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c1n7vfd6h765u"]
+
+[ext_resource type="Shader" uid="uid://c8e6e1pb8hx6s" path="res://Assets/Shaders/FakeLight.tres" id="1_xnldl"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6ofmw"]
+
+[resource]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_6ofmw")
+shader = ExtResource("1_xnldl")
+shader_parameter/DarknessStrength = 1.0

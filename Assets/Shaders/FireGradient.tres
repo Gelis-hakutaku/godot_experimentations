@@ -1,0 +1,10 @@
+[gd_resource type="GradientTexture1D" format=3 uid="uid://ttgk8s408hch"]
+
+[sub_resource type="Gradient" id="Gradient_8aodn"]
+offsets = PackedFloat32Array(0, 0.01, 0.08637874, 0.14950167, 0.7607973, 0.8936877)
+colors = PackedColorArray(0.99607843, 0.11372549, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0.9882353, 0.4509804, 0, 1, 0.99215686, 1, 0, 1, 0.99215955, 1.0039686, 0.34660307, 1)
+metadata/_snap_count = 100
+
+[resource]
+resource_local_to_scene = true
+gradient = SubResource("Gradient_8aodn")
